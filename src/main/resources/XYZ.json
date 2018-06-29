@@ -1,0 +1,28 @@
+{
+  "requester": {
+    "id": "CVO",
+    "name": "Caravelo"
+  },
+  "provider": {
+    "id": "XYZ",
+    "name": "Clemen"
+  },
+  "survey": {
+    "subject": 3941285,
+    "target": {
+      "gender": "M",
+      "age": [30, 40],
+      "income": {
+        "currency": "EUR",
+        "range": [20000, 40000]
+      }
+    },
+    "country": "ES"
+  },
+  "subscription": {
+    "frequency": "monthly",
+    "channel": [
+      "postal", "api", "ftp"
+    ]
+  }
+}

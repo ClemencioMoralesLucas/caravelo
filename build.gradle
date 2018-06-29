@@ -1,0 +1,43 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'gs-spring-boot'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    // tag::actuator[]
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    // end::actuator[]
+    // tag::tests[]
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile group: 'org.testng', name: 'testng', version: '6.9.10'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+    // end::tests[]
+    compile 'com.auth0:java-jwt:3.2.0'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.8.3'
+    compile 'io.rest-assured:rest-assured:3.1.0'
+
+}
+

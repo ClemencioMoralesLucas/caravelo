@@ -1,0 +1,28 @@
+{
+  "requester": {
+    "id": "CVO",
+    "name": "Caravelo"
+  },
+  "provider": {
+    "id": "TGI",
+    "name": "Kantar"
+  },
+  "survey": {
+    "subject": 81111600,
+    "target": {
+      "gender": "M",
+      "age": [30, 60],
+      "income": {
+        "currency": "EUR",
+        "range": [20000, 40000]
+      }
+    },
+    "country": "ES"
+  },
+  "subscription": {
+    "frequency": "weekly",
+    "channel": [
+      "postal", "mail", "api", "ftp"
+    ]
+  }
+}
