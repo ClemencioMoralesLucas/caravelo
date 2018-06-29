@@ -23,5 +23,4 @@ public enum AvailableMarketingResearchesEnum {
         }
         return result;
     }
-
 }

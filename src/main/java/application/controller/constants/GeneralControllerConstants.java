@@ -26,5 +26,4 @@ public interface GeneralControllerConstants {
         }
         return query_pairs;
     }
-
 }
